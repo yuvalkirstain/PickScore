@@ -1,0 +1,10 @@
+# @package _global_
+
+output_dir: outputs/${accelerator.project_name}/clip
+
+dataset:
+  batch_size: 16
+
+accelerator:
+  mixed_precision: BF16
+  project_name: reward_final

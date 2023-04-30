@@ -1,0 +1,11 @@
+defaults:
+  - base_config
+  - _self_
+
+hydra:
+  run:
+    dir: .
+
+debug:
+  activate: false
+  port: 5900

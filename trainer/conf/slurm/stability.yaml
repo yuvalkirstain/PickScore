@@ -1,0 +1,9 @@
+# @package _global_
+
+slurm:
+  job_name: eval
+  partition: g40
+  n_nodes: 1
+  exclude: "ip-26-0-140-150,ip-26-0-134-43"
+  cmd: ???
+  account: trlx

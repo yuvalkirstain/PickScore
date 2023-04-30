@@ -1,0 +1,9 @@
+slurm:
+  job_name: eval
+  partition: killable
+  n_processes: 8
+  n_nodes: 1
+  time_limit: 180
+  exclude: "n-202,n-203,n-204,rack-bgw-dgx1,rack-gww-dgx1,rack-omerl-g01"
+  cmd: ???
+  account: null
