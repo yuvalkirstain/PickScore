@@ -1,5 +1,5 @@
 # PickScore
-This repository contains the code for the paper TODO. 
+This repository contains the code for the paper [Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation](https://arxiv.org/abs/2305.01569). 
 
 We also open-source the [Pick-a-Pic dataset](https://huggingface.co/datasets/yuvalkirstain/pickapic_v1) and [PickScore model](https://huggingface.co/yuvalkirstain/PickScore_v1). We encourage readers to experiment with the [Pick-a-Pic's web application](https://pickapic.io/) and contribute to the dataset.
 
@@ -113,7 +113,6 @@ Training here is done on 8 A100 GPUs and takes about 40 minutes.
 
 ### Locally
 ```bash
-```bash
 accelerate launch --dynamo_backend no --gpu_ids all --num_processes 8  --num_machines 1 --use_deepspeed trainer/scripts/train.py +experiment=clip_h output_dir=output```
 ```
 
@@ -130,5 +129,12 @@ python trainer/slurm_scripts/slurm_train.py +slurm=stability 'slurm.cmd="+experi
 ## Citation
 If you find this work useful, please cite:
 ```bibtex
-TODO
+@misc{kirstain2023pickapic,
+      title={Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation}, 
+      author={Yuval Kirstain and Adam Polyak and Uriel Singer and Shahbuland Matiana and Joe Penna and Omer Levy},
+      year={2023},
+      eprint={2305.01569},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
