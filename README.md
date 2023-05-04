@@ -129,12 +129,9 @@ python trainer/slurm_scripts/slurm_train.py +slurm=stability 'slurm.cmd="+experi
 ## Citation
 If you find this work useful, please cite:
 ```bibtex
-@misc{kirstain2023pickapic,
-      title={Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation}, 
-      author={Yuval Kirstain and Adam Polyak and Uriel Singer and Shahbuland Matiana and Joe Penna and Omer Levy},
-      year={2023},
-      eprint={2305.01569},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{Kirstain2023PickaPicAO,
+  title={Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation},
+  author={Yuval Kirstain and Adam Polyak and Uriel Singer and Shahbuland Matiana and Joe Penna and Omer Levy},
+  year={2023}
 }
 ```
