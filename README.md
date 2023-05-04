@@ -107,7 +107,7 @@ Please note that the dataset has more half-a-million images, so you can start by
 dataset = load_dataset("yuvalkirstain/pickapic_v1_no_images")
 ```
 
-## Train PickScore from Scrtach
+## Train PickScore from Scratch
 You might want to download the dataset before training to save compute budget. 
 Training here is done on 8 A100 GPUs and takes about 40 minutes.
 
