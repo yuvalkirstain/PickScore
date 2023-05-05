@@ -102,7 +102,7 @@ from datasets import load_dataset
 dataset = load_dataset("yuvalkirstain/pickapic_v1", num_proc=64)
 ```
 
-Please note that the dataset has more half-a-million images, so you can start by downloading the validation split or the version without images (only urls of images):
+Please note that the dataset has more half-a-million images, so you can start by downloading the validation split (add `streaming=True` to avoid downloading the entire dataset) or the version without images (only urls of images):
 ```python
 dataset = load_dataset("yuvalkirstain/pickapic_v1_no_images")
 ```
