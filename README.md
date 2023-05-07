@@ -44,6 +44,7 @@ We display here an example for running inference with PickScore as a preference 
 ```python
 # import
 from transformers import AutoProcessor, AutoModel
+from PIL import Image
 
 # load model
 device = "cuda"
