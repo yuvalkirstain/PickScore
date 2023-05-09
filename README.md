@@ -48,6 +48,7 @@ We display here an example for running inference with PickScore as a preference 
 # import
 from transformers import AutoProcessor, AutoModel
 from PIL import Image
+import torch
 
 # load model
 device = "cuda"
