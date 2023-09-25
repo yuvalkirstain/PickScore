@@ -1,7 +1,7 @@
 # PickScore
 This repository contains the code for the paper [Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation](https://arxiv.org/abs/2305.01569). 
 
-We also open-source the [Pick-a-Pic dataset](https://huggingface.co/datasets/yuvalkirstain/pickapic_v1) and [PickScore model](https://huggingface.co/yuvalkirstain/PickScore_v1). We encourage readers to experiment with the [Pick-a-Pic's web application](https://pickapic.io/) and contribute to the dataset.
+We also open-source the [Pick-a-Pic v2 dataset](https://huggingface.co/datasets/yuvalkirstain/pickapic_v2), [Pick-a-Pic v1 dataset](https://huggingface.co/datasets/yuvalkirstain/pickapic_v1), and [PickScore model](https://huggingface.co/yuvalkirstain/PickScore_v1). We encourage readers to experiment with the [Pick-a-Pic's web application](https://pickapic.io/) and contribute to the dataset.
 
 ## Demo
 We created a simple demo for PickScore at [HF Spaces](https://huggingface.co/spaces/yuvalkirstain/PickScore), check it out :)
@@ -105,11 +105,15 @@ It took me about 30 minutes to download the dataset which takes about 190GB of d
 ```bash
 from datasets import load_dataset
 dataset = load_dataset("yuvalkirstain/pickapic_v1", num_proc=64)
+# if you want to download the latest version of pickapic download:
+# dataset = load_dataset("yuvalkirstain/pickapic_v2", num_proc=64)
 ```
 
 Please note that the dataset has more half-a-million images, so you can start by downloading the validation split (add `streaming=True` to avoid downloading the entire dataset) or the version without images (only urls of images):
 ```python
 dataset = load_dataset("yuvalkirstain/pickapic_v1_no_images")
+# if you want to download the latest version of pickapic download:
+# dataset = load_dataset("yuvalkirstain/pickapic_v2_no_images")
 ```
 
 ## Train PickScore from Scratch
