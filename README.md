@@ -116,6 +116,8 @@ dataset = load_dataset("yuvalkirstain/pickapic_v1_no_images")
 # dataset = load_dataset("yuvalkirstain/pickapic_v2_no_images")
 ```
 
+Note that we intend to allow downloading the images only through HF datasets rather than from AWS directly. If the URLs do not work, please download the data from huggingface datasets.
+
 ## Train PickScore from Scratch
 You might want to download the dataset before training to save compute budget. 
 Training here is done on 8 A100 GPUs and takes about 40 minutes.
