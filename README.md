@@ -108,8 +108,11 @@ dataset = load_dataset("yuvalkirstain/pickapic_v1", num_proc=64)
 # if you want to download the latest version of pickapic download:
 # dataset = load_dataset("yuvalkirstain/pickapic_v2", num_proc=64)
 ```
+you can also use the 'streaming=true' so you do not download the entire dataset.
+the jpg_0 and jpg_1 columns contain the images as bytes and can be read with PIL and io.BytesIO.
 
 Please note that the dataset has more half-a-million images, so you can start by downloading the validation split (add `streaming=True` to avoid downloading the entire dataset) or the version without images (only urls of images):
+but as of lately the images urls are invalid.
 ```python
 dataset = load_dataset("yuvalkirstain/pickapic_v1_no_images")
 # if you want to download the latest version of pickapic download:
